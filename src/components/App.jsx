@@ -9,7 +9,7 @@ export const App = () => {
         flexDirection: "column",
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 20,
         color: '#010101'
       }}
     >

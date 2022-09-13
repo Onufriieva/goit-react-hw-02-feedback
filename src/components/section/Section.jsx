@@ -1,5 +1,6 @@
 import Statistics from 'components/statistics';
 import FeedbackOptions from 'components/statistics/feedbackOptions';
+import Notification from 'components/notification/Notification';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 
@@ -50,14 +51,15 @@ class Section extends Component {
             /> 
 
 
+            {this.calculateTotal() === 0 ? <Notification message="There is no feedback"/> : 
             <Statistics
             goodValue={this.state.good}
             neutralValue={this.state.neutral}
             badValue={this.state.bad}
-            />    
+            total={total}
+            percentage={percentage}
+            />  }
 
-            <p>Total:{total}</p>    
-            <p>Percent:{percentage}</p>   
         </section>
         )
     }
@@ -68,8 +70,6 @@ class Section extends Component {
 Section.propTypes = {
     section: PropTypes.string,
     h1: PropTypes.string,
-    total: PropTypes.number,
-    percentage: PropTypes.number,
-}
+  }
 
 export default Section
