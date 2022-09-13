@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Section total={0} percent={0}/>     
+      <Section total={0} percentage={0}/>     
     </div>
   );
 };

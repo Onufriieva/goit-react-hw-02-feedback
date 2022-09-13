@@ -12,9 +12,9 @@ const Statistics = ({ goodValue, neutralValue, badValue }) => (
 );
 
 
-Statistics.propTypes = {
-    div: PropTypes.string,
-    p: PropTypes.string,
-};
+// Statistics.propTypes = {
+//     div: PropTypes.string,
+//     p: PropTypes.string,
+// };
 
 export default Statistics;
