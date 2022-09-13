@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 
@@ -12,9 +12,12 @@ const Statistics = ({ goodValue, neutralValue, badValue }) => (
 );
 
 
-// Statistics.propTypes = {
-//     div: PropTypes.string,
-//     p: PropTypes.string,
-// };
+Statistics.propTypes = {
+    div: PropTypes.string,
+    h2: PropTypes.string,
+    goodValue: PropTypes.number,
+    neutralValue: PropTypes.number,
+    badValue: PropTypes.number,
+};
 
 export default Statistics;
