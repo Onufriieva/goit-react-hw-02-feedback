@@ -1,16 +1,20 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import {FeedbackList, ListItem, ListButton} from './FeedbackOptionsStyled'
 
 
 const FeedbackOptions = ({options, onBtnClick }) => {
                     
-  return  <ul>
-      {options.map((option, index) => {
-          return (<li key={index}>
-              <button type='button' onClick={() => onBtnClick(option)}>{option}</button>
-          </li>)
-      })}
-           </ul> 
+  return <FeedbackList>
+    {options.map((option, index) => {
+      return (
+        <ListItem key={index}>
+          <ListButton type='button' onClick={() => onBtnClick(option)}>{option}</ListButton>
+        </ListItem>
+      )
+    })
+  }
+  </FeedbackList> 
 };
 
 FeedbackOptions.propTypes = {

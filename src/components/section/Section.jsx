@@ -3,6 +3,7 @@ import FeedbackOptions from 'components/statistics/feedbackOptions';
 import Notification from 'components/notification/Notification';
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
+import {SectionTitle} from './SectionStyled'
 
 
 class Section extends Component {
@@ -43,7 +44,7 @@ class Section extends Component {
 
         return (
         <section>
-            <h1>Please leave feedback</h1>
+            <SectionTitle>Please leave feedback</SectionTitle>
 
             <FeedbackOptions
             onBtnClick={this.handleIncrement}
