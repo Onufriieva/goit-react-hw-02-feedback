@@ -3,16 +3,16 @@ import React from 'react';
 
 
 const FeedbackOptions = ({ onBtnGood, onBtnNeutral, onBtnBad }) => (
-    <div>
-      <button type="button" onClick={onBtnGood}>Good</button>
+    <ul>
+      <button type="button" onClick={onBtnGood}>Good</button> 
       <button type="button" onClick={onBtnNeutral}>Neutral</button>
       <button type="button" onClick={onBtnBad}>Bad</button>
-    </div>
+    </ul>
 );
  
 
 FeedbackOptions.propTypes = {
-    div: PropTypes.string,
+    ul: PropTypes.string,
     button: PropTypes.string,
     button: PropTypes.string,
     button: PropTypes.string,

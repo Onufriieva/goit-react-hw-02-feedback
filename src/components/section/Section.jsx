@@ -11,6 +11,17 @@ class Section extends Component {
         bad: 0
     };
 
+    // handleIncrement = ({  name  }) => 
+    //     this.setState(prevState => {
+    //         return {                
+    //            [name]: prevState[name] + 1              
+    //         };
+    //     });
+      
+
+      
+//    
+
       handleIncrementGood = () => {
         this.setState(prevState => {
             return {                
@@ -47,11 +58,23 @@ class Section extends Component {
         <section>
             <h1>Please leave feedback</h1>
 
+            {/* <ul>
+          {Object.entries(this.state).map(([key, value]) => (
             <FeedbackOptions
+              key={key}
+              name={key}
+              quantity={value}
+              onBtnClick={this.handleIncrement}
+            />
+          ))}
+        </ul> */}
+
+             <FeedbackOptions
             onBtnGood={this.handleIncrementGood}
             onBtnNeutral={this.handleIncrementNeutral}
             onBtnBad={this.handleIncrementBad}
-            />
+            /> 
+
 
             <Statistics
             goodValue={this.state.good}
@@ -77,6 +100,7 @@ class Section extends Component {
 // }
 
 Section.propTypes = {
+    ul: PropTypes.string,
     section: PropTypes.string,
     h1: PropTypes.string,
     p: PropTypes.string,
