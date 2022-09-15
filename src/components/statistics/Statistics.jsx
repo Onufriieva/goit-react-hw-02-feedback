@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import {StatisticsText, StatisticsTitle} from './StatisticsStyled';
 
 
 const Statistics = ({ goodValue, neutralValue, badValue, total, percentage }) => (
     <div>
-      <h2>Statistics</h2>               
-      <p>Good:{goodValue}</p>           
-      <p>Neutral:{neutralValue}</p>
-      <p>Bad:{badValue}</p>
-      <p>Total:{total}</p>    
-      <p>Percent:{percentage}</p>  
+      <StatisticsTitle >Statistics</StatisticsTitle >               
+      <StatisticsText>Good: {goodValue}</StatisticsText>           
+      <StatisticsText>Neutral: {neutralValue}</StatisticsText>
+      <StatisticsText>Bad: {badValue}</StatisticsText>
+      <StatisticsText>Total: {total}</StatisticsText>    
+      <StatisticsText>Positive feedback: {percentage}</StatisticsText>  
     </div>
 );
 
