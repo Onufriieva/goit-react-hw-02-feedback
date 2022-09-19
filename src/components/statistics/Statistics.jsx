@@ -16,8 +16,6 @@ const Statistics = ({ goodValue, neutralValue, badValue, total, percentage }) =>
 
 
 Statistics.propTypes = {
-    div: PropTypes.string,
-    h2: PropTypes.string,
     goodValue: PropTypes.number,
     neutralValue: PropTypes.number,
     badValue: PropTypes.number,
